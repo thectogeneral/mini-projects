@@ -11,7 +11,7 @@ function transformJSONtoCSV(inputFile, outputFile) {
   // Create a read stream for the JSON file
   const jsonReadStream = fs.createReadStream(inputFile, { encoding: 'utf8' });
 
-  // Create a JSON parser stream using json-stream-stringify (called as a function, not a constructor)
+  // Create a JSON parser stream using json-stream-stringify
   const jsonParserStream = new JsonStreamStringify();
 
   // Create a CSV stringifier with column headers
